@@ -17,7 +17,6 @@ async def main():
         asyncio.create_task(factorial("C", 4))
     ]
 
-    # Ждем завершения всех задач
     await asyncio.gather(*tasks)
 
 
